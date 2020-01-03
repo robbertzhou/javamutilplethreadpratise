@@ -7,16 +7,18 @@ public class ReentrantLockTest implements Runnable {
     public static int i = 0;
     @Override
     public void run() {
-        while(i< 100000000){
-            lock.lock();
+
+        while(i< 100000){
+//            lock.lock();
             try{
 
                 i++;
+//                System.out.println("Threadid=" + Thread.currentThread().getId() + ",value=" + i);
             }catch (Exception ex){
-
+                ex.printStackTrace();
             }
             finally {
-                lock.unlock();
+//                lock.unlock();
             }
         }
     }
@@ -26,8 +28,9 @@ public class ReentrantLockTest implements Runnable {
         Thread t2 = new Thread(new ReentrantLockTest());
         t1.start();
         t2.start();
-        t1.join();
-        t2.join();
+//        t1.join();
+//        t2.join();
+        Thread.sleep(5000);
         System.out.println(i);
     }
 }
