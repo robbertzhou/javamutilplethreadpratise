@@ -3,7 +3,7 @@ package com.zy.akkatest;
 import akka.actor.UntypedAbstractActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
-import com.sun.corba.se.spi.orbutil.threadpool.Work;
+
 
 import java.sql.SQLSyntaxErrorException;
 

@@ -2,6 +2,8 @@ package gaobingfa.ch01;
 
 /**
  * 模板设计模式方法例子
+ * 父类定义算法结构，子类实现逻辑细节。
+ * 这里final print方法控制算法结构，并且不允许修改。
  */
 public class TemplateMethod {
     public final void  print(String message){

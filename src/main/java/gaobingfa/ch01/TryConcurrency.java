@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 public class TryConcurrency {
     public static void main(String[] args){
-       new Thread(TryConcurrency::enjoyNusic).start();
-       new Thread(TryConcurrency::browserNews).start();
+       new Thread(TryConcurrency::enjoyMusic,"enjoinMusic").start();
+       new Thread(TryConcurrency::browserNews,"browserNews").start();
     }
 
     public static void browserNews(){
@@ -15,7 +15,7 @@ public class TryConcurrency {
         }
     }
 
-    public static void enjoyNusic(){
+    public static void enjoyMusic(){
         for (;;){
             System.out.println("enjoy music.");
             sleep(1);

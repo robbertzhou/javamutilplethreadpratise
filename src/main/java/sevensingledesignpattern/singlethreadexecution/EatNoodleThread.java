@@ -1,6 +1,6 @@
 package sevensingledesignpattern.singlethreadexecution;
 
-import javafx.scene.control.Tab;
+
 
 public class EatNoodleThread extends Thread {
 //    private Tableware leftTool;
