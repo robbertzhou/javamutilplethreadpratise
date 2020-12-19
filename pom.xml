@@ -28,7 +28,18 @@
             <version>3.8.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.stumbleupon</groupId>
+            <artifactId>async</artifactId>
+            <version>1.4.1</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
